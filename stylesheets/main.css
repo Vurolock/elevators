@@ -40,16 +40,20 @@ body {
 }
 
 .elevator {
-    height: 200px;
-    width: 150px;
+    height: 160px;
+    width: 120px;
     background-color: black;
     border-radius: 2px;
 }
 
 .left {
-    margin-left: 40px;
+    margin-left: 100px;
+}
+
+.button {
+    margin-bottom: 60px;
 }
 
 .right {
-    margin-right: 40px;
+    margin-right: 100px;
 }
