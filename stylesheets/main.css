@@ -40,10 +40,14 @@ body {
 }
 
 .elevator {
-    height: 160px;
+    height: 180px;
     width: 120px;
     background-color: black;
-    border-radius: 2px;
+    border-radius: 5px;
+    animation-duration: 30s;
+    animation-name: go-up;
+    animation-timing-function: cubic-bezier(.6,-0.14,.35,1.18);
+    animation-iteration-count: infinite;
 }
 
 .left {
@@ -51,9 +55,37 @@ body {
 }
 
 .button {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
+    border: none;
+    background-color: rgb(74, 68, 58);
+    padding: 2px 4px 0 1px;
 }
 
 .right {
     margin-right: 100px;
+    animation-delay: 5s;
+}
+
+/* .translate {
+    transform: translateY(-600px);
+    transition: all 8s cubic-bezier(.64,.1,.4,.96);
+} */
+
+@keyframes go-up {
+
+    16.67% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -600px);
+    }
+
+    66.67% {
+        transform: translate(0, -600px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
